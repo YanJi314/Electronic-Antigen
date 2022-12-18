@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="zh">
+<head>
+	<title>「电子抗原」</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="box">
+        <img class="qrcode" src="qrcode.png">
+        <div class="covid">2019-nCoV</div>
+        <div class="ag">Ag</div>
+        
+        <div class="progress">
+            <div id="red"></div>
+            <div id="line"></div>
+            <div class="ct">
+                <div id="c">C</div>
+                <div id="t">T</div>
+            </div>
+        </div>
+        
+        <div class="time">15 sec</div>
+        
+        <div class="click" onpointerdown="sClick(this)">
+            <div id="s">S</div>
+        </div>
+    </div>
+    
+    <div class="warning">本页面绝不可用于实际诊断 | <a href="//i.simsoft.top/#donate">捐助作者</a></div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
