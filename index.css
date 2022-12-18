@@ -1,0 +1,158 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    background:#dadee6;
+    user-select:none;
+}
+
+.box{
+    background:white;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    box-shadow:3px 3px 7px 0 rgba(0,0,0,.4);
+    width:100px;
+    height:350px;
+    margin:auto;
+    border-radius:10px;
+    text-align:center;
+    padding:5px;
+    font-weight:bold;
+}
+.warning{
+    color:black;
+    position:fixed;
+    bottom:5px;
+    text-align:center;
+    font-size:.8em;
+    width:100%;
+}
+a{
+    color:#1e9fff;
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:underline;
+}
+a:active{
+    opacity:.8;
+}
+
+/*文字部分*/
+.covid,.ag,.qrcode,.time{
+    opacity:.7;
+}
+.covid,.time{
+    font-size:.8em;
+}
+.ag{
+    font-size:.9em;
+    margin-top:-5px;
+}
+.qrcode{
+    width:60px;
+    height:60px;
+    margin-top:20px;
+}
+
+
+/*检测条部分*/
+.progress{
+    position:relative;
+    margin-top:30px;
+    font-size:.9em;
+    background:#f7f9fa;
+    width:28px;
+    height:88px;
+    display:inline-block;
+    border-width:4px;
+    border-style:inset;
+    border-radius:5px;
+    margin-bottom:10px;
+}
+.ct{
+    position:absolute;
+    right:-.7em;
+    height:100%;
+}
+#c{
+    position:absolute;
+    bottom:50px;
+}
+#t{
+    position:absolute;
+    bottom:15px;
+}
+
+/*滴水部分*/
+.click{
+    position:relative;
+    margin-top:10px;
+    font-size:.9em;
+    background:#f7f9fa;
+    width:35px;
+    height:35px;
+    display:inline-block;
+    border-width:6px;
+    border-style:inset;
+    border-radius:5px;
+    transition:background .6s;
+}
+#s{
+    position:absolute;
+    right:-1.3em;
+    height:100%;
+}
+.click.water{
+    background:#edeff0;
+    transition:background .2s;
+}
+
+/*动画部分*/
+.animation #red{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    animation:red linear 15s;
+}
+.animation #line{
+    position:absolute;
+    z-index:2;
+    bottom:0;
+    width:100%;
+    height:2px;
+    bottom:58px;
+    animation:redLine 1s;
+    animation-delay:9s;
+}
+@keyframes red{
+    0%{
+        background:#ebb0bc;
+        height:0%;
+    }
+    80%{
+        background:#ebb0bc;
+        height:100%;
+    }
+    100%{
+        background:#f7f9fa;
+        height:100%;
+    }
+}
+@keyframes redLine{
+    0%{
+        background:#b27d88;
+        opacity:0;
+    }
+    50%{
+        background:#b27d88;
+        opacity:1;
+    }
+    100%{
+        background:#b2848e;
+        opacity:1;
+    }
+}
