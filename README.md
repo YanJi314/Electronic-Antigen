@@ -1,6 +1,6 @@
 # Electronic-Antigen
 整活项目 ——「电子抗原」
-https://simsoft.top/pages/dzky/
+https://simsv.com/pages/dzky/
 
 # 关于开源
 - 欢迎使用，欢迎 Fork & PR
